@@ -16,7 +16,7 @@ const properties = [
             November: 1605,
             December: 1900
         },
-        expense: {
+        expenses: {
             January: 20,
             February: 10,
             March: 50,
@@ -48,39 +48,7 @@ const properties = [
             November: 1100,
             December: 1200
         },
-        expense: {
-            January: 50,
-            February: 20,
-            March: 30,
-            April: 20,
-            May: 25,
-            June: 34,
-            July: 36,
-            August: 60,
-            September: 90,
-            October: 100,
-            November: 92,
-            December: 20
-        }
-    },
-    {
-        propertyId: 12345,
-        propertyName: "abcd",
-        income: {
-            January: 100,
-            February: 200,
-            March: 300,
-            April: 400,
-            May: 500,
-            June: 600,
-            July: 700,
-            August: 800,
-            September: 900,
-            October: 1000,
-            November: 1100,
-            December: 1200
-        },
-        expense: {
+        expenses: {
             January: 50,
             February: 20,
             March: 30,
@@ -97,4 +65,4 @@ const properties = [
     }
 ]
 
-export default properties;
+module.exports = properties;

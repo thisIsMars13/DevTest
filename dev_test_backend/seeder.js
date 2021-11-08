@@ -3,7 +3,7 @@ const dotenv = require('dotenv')
 const connectDB = require('./config/db')
 const Property = require('./models/properties.model')
 const User = require('./models/users.model')
-const properties = require('./data/properties')
+const properties = require('./models/data/properties')
 
 dotenv.config();
 
@@ -15,7 +15,7 @@ const importData = async () => {
         await Property.deleteMany();
         await User.deleteMany()
 
-        await User.insertMany({email:"jg@g.com", password: "123456789"})
+        // await User.insertMany({email:"jg@g.com", password: "123456789"})
         const createdProp = await Property.insertMany(properties);
         console.log(createdProp)
     } catch (error) {

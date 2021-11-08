@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import Charts from '../components/Charts';
 import SelectCharts from '../components/SelectCharts';
 import axios from 'axios';
-import properties from '../../properties';
 import { Row, Col } from 'react-bootstrap';
 
 const Home = () => {

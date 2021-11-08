@@ -1,6 +1,7 @@
 const mongoose = require('mongoose');
 
-const propertySchema = mongoose.Schema({
+// Create properties model schema
+const propertyDataSchema = mongoose.Schema({
     propertyName: {
         type : String,
         required: true
@@ -37,6 +38,6 @@ const propertySchema = mongoose.Schema({
     timestamps: true
 })
 
-const Property = mongoose.model('Properties', propertySchema)
+const Property = mongoose.model('propertyData', propertyDataSchema)
 
 module.exports = Property;
