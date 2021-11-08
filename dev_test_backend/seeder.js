@@ -9,6 +9,7 @@ dotenv.config();
 
 connectDB();
 
+// To import dummy data
 const importData = async () => {
     try {
         await Property.deleteMany();
