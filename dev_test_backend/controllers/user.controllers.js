@@ -3,7 +3,7 @@ const bcrypt = require('bcryptjs')
 
 // DOCU: POST
 // Fetch user by email
-// Return: {email, password, _id}
+// Return: { email, password, _id }
 // @author: Jomar
 const getUserByEmail = (req, res) => {
     let { email, password } = req.body;
